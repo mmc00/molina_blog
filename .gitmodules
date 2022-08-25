@@ -1,0 +1,9 @@
+[submodule "themes/portfolio"]
+	path = themes/portfolio
+	url = https://github.com/wowchemy/starter-hugo-portfolio-theme.git
+[submodule "themes/personal"]
+	path = themes/personal
+	url = https://github.com/wowchemy/starter-hugo-academic.git
+[submodule "themes/web"]
+	path = themes/web
+	url = https://github.com/dillonzq/LoveIt.git
