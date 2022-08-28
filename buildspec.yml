@@ -1,0 +1,25 @@
+version: 0.2
+
+enviroment_variables:
+    HUGO_VERSION: "0.101.0"
+    S3_BUCKET_GOES: "webhugo"
+
+phases:
+    install:
+        runtime-versions:
+            docker: 18
+        commands:
+            - cd / temp
+            - wget https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz
+            - tar -xzf hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz
+            - mv hugo /usr/bin/hugo
+            - cd -
+            - rm -rf /tmp/*
+    build:
+        commands:
+            - rm -rf public
+            - hugo 
+            - aws s3 sync public/ s3://{S3_BUCKET_GOES}/ --region us-east-1 --delete
+    post_build:
+        commands:
+            - echo Build completed on `date`
