@@ -1,6 +1,7 @@
 version: 0.2
 
-enviroment_variables:
+environment_variables:
+  plaintext:
     HUGO_VERSION: "0.101.0"
     S3_BUCKET_GOES: "webhugo"
 
