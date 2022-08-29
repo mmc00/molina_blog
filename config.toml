@@ -1,4 +1,10 @@
-baseURL = 'http://example.org/'
+baseURL = 'http://webhugo.s3-website-us-east-1.amazonaws.com/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 theme = "web"
+
+[params]
+  defaultTheme = "auto"
+  gitRepo = "https://github.com/mmc00"
+  dateFormat = "2006-01-02"
+  title = "Data Scientist, Economist and Cloud Engineer in the process"
