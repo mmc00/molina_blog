@@ -1,18 +1,15 @@
 baseURL = 'http://webhugo.s3-website-us-east-1.amazonaws.com/'
 languageCode = 'en-us'
-title = 'Marlon's blog'
+title = "Marlon's blog"
 theme = "web"
 
 [menu]
   [[menu.main]]
     identifier = "Blog"
-    # you can add extra information before the name (HTML format is supported), such as icons
     pre = ""
-    # you can add extra information after the name (HTML format is supported), such as icons
     post = ""
     name = "Blog"
     url = "/posts/"
-    # title will be shown when you hover on this menu link
     title = "Blog"
     weight = 1
   [[menu.main]]
@@ -40,7 +37,6 @@ theme = "web"
     title = ""
     weight = 4
 
-
 [params]
   defaultTheme = "auto"
   gitRepo = "https://github.com/mmc00"
@@ -50,7 +46,6 @@ theme = "web"
   
  [params.app]
   title = "Marlon's blog"
-  
  
- [params.home.profile]
-      subtitle = "Data Scientist, Economist and Cloud Engineer in process"
+  [params.home.profile]
+    subtitle = "Data Scientist, Economist and Cloud Engineer in process"
