@@ -8,3 +8,9 @@ theme = "web"
   gitRepo = "https://github.com/mmc00"
   dateFormat = "2006-01-02"
   title = "Data Scientist, Economist and Cloud Engineer in the process"
+  
+ [params.app]
+  title = "My personal website"
+ 
+  [params.home.profile]
+      subtitle = "Data Scientist, Economist and Cloud Engineer in the process"
