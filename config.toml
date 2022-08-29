@@ -1,7 +1,45 @@
 baseURL = 'http://webhugo.s3-website-us-east-1.amazonaws.com/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Marlon's blog'
 theme = "web"
+
+[menu]
+  [[menu.main]]
+    identifier = "Blog"
+    # you can add extra information before the name (HTML format is supported), such as icons
+    pre = ""
+    # you can add extra information after the name (HTML format is supported), such as icons
+    post = ""
+    name = "Blog"
+    url = "/posts/"
+    # title will be shown when you hover on this menu link
+    title = "Blog"
+    weight = 1
+  [[menu.main]]
+    identifier = "Tags"
+    pre = ""
+    post = ""
+    name = ""
+    url = "/tags/"
+    title = ""
+    weight = 2
+  [[menu.main]]
+    identifier = "category"
+    pre = ""
+    post = ""
+    name = "Categories"
+    url = "/categories/"
+    title = "Category"
+    weight = 3
+  [[menu.main]]
+    identifier = "about"
+    pre = ""
+    post = ""
+    name = "About"
+    url = "/about/"
+    title = ""
+    weight = 4
+
 
 [params]
   defaultTheme = "auto"
@@ -11,7 +49,8 @@ theme = "web"
   images = ["about.jpg"]
   
  [params.app]
-  title = "My personal website"
+  title = "Marlon's blog"
+  
  
-  [params.home.profile]
-      subtitle = "Data Scientist, Economist and Cloud Engineer in the process"
+ [params.home.profile]
+      subtitle = "Data Scientist, Economist and Cloud Engineer in process"
