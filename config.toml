@@ -110,8 +110,8 @@ theme = "web"
    defaultHiddenFromHomePage = true
 
  [params.social]
-  GitHub = "https://github.com/mmc00"
-  Linkedin = "https://www.linkedin.com/in/marlon-molina-corella-413a3610a"
+  GitHub = "mmc00"
+  Linkedin = "marlon-molina-corella-413a3610a"
   Twitter = ""
   Instagram = ""
   Facebook = ""
