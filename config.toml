@@ -42,7 +42,7 @@ theme = "web"
   gitRepo = "https://github.com/mmc00"
   dateFormat = "2006-01-02"
   title = "Data Scientist, Economist and Cloud Engineer in process"
-  images = ["about.jpg"]
+  images = ["img/about.jpg"]
 
  [params.app]
   title = "Marlon's blog"
