@@ -102,7 +102,7 @@ theme = "web"
    subtitle = "Data Scientist, Economist and Cloud Engineer in process"
    typeit = true
    social = true
-   disclaimer = "Machine Learning, Economy, Math, Cloud"
+   disclaimer = "Machine Learning, Economy and Cloud"
         
   [params.home.posts]
    enable = true
@@ -336,7 +336,7 @@ theme = "web"
     # LoveIt NEW | 0.2.7 Third-party library config
     [params.page.library]
       [params.page.library.css]
-        # someCSS = "some.css"
+        someCSS = "css/_override.scss"
         # located in "assets/"
         # Or
         # someCSS = "https://cdn.example.com/some.css"
