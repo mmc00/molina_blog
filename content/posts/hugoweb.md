@@ -2,7 +2,7 @@
 title: "My Hugo website with AWS"
 date: 2022-08-31T19:40:41Z
 draft: false
-tags: ["personal"]
+tags: ["personal", "aws"]
 categories: ["projects"]
 featuredImage: "/img/awss3.png"
 ---

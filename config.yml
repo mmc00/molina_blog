@@ -1,0 +1,150 @@
+baseURL: "http://webhugo.s3-website-us-east-1.amazonaws.com/"
+title: mmc00
+paginate: 10
+theme: PaperMod
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+# googleAnalytics: 
+
+# minify:
+#     disableXML: true
+
+languages:
+    en:
+        languageName: "English"
+        weight: 1
+        taxonomies:
+          category: categories
+          tag: tags
+          series: series
+        menu:
+            main:
+                - name: posts
+                  url: posts/
+                  weight: 1
+                - name: search
+                  url: search/
+                  weight: 10
+                - name: tags
+                  url: tags/
+                  weight: 10
+                - name: about
+                  url: about/
+                  weight: 20
+                  
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON
+        
+params:
+    env: production # to enable google analytics, opengraph, twitter-cards and schema.
+    description: "My blog"
+    keywords: [Blog, Portfolio, ML, DataScience]
+    defaultTheme: dark #auto # light
+    disablePoweredBy: true
+    ShowAllPagesInArchive: true
+    hideFooter: true
+    ShowShareButtons: true
+    ShowReadingTime: false
+    displayFullLangName: true
+    ShowPostNavLinks: true
+    ShowBreadCrumbs: true
+    ShowCodeCopyButtons: true
+    ShowRssButtonInSectionTermList: true
+    ShowToc: false
+    comments: false
+    
+    assets:
+    favicon: "/favicon.ico"
+    favicon16x16:  "/favicon-16x16.png"
+    favicon32x32:  "/favicon-32x32.png"
+    apple_touch_icon:  "/apple-touch-icon.png"
+    safari_pinned_tab:  "/safari-pinned-tab.svg"
+    
+    profileMode:
+        enabled: true
+        title: "Marlon Molina" # optional default will be site title
+        subtitle: "Data Scientist, Economist and Cloud Engineer in process"
+        imageUrl: "/about2.jpg" # optional
+        imageTitle: "" # optional
+        imageWidth: 256 # custom size
+        imageHeight: 256 # custom size
+        buttons:
+            - name: about
+              url: about/
+            - name: archive
+              url: archives/
+    
+    homeInfoParams:
+#        Title: "Marlon Molina"
+        Content: >
+            "Data Scientist, Economist and Cloud Engineer in process"
+            
+    socialIcons:
+        - name: github
+          url: "https://github.com/mmc00/"
+        - name: linkedin
+          url: "https://www.linkedin.com/in/marlon-molina-corella-413a3610a"
+        - name: email
+          url: "mailto:marlonmolina00@hotmai.com"
+          
+#     editPost:
+#         URL: ""
+#         Text: "Suggest Changes" # edit text
+#         appendFilePath: true # to append file path to Edit link
+
+    label:
+        text: "mmc00"
+        icon: "/logo.png"
+        iconHeight: 24
+        
+#     fuseOpts:
+#         isCaseSensitive: false
+#         shouldSort: true
+#         location: 0
+#         distance: 1000
+#         threshold: 0.4
+#         minMatchCharLength: 0
+#         keys: ["title", "permalink", "summary", "content"]
+
+# markup:
+#     goldmark:
+#         renderer:
+#             unsafe: true
+#     highlight:
+#         noClasses: false
+#         # anchorLineNos: true
+#         # codeFences: true
+#         # guessSyntax: true
+#         # lineNos: true
+#         # style: monokai
+
+# privacy:
+#     vimeo:
+#         disabled: false
+#         simple: true
+
+#     twitter:
+#         disabled: false
+#         enableDNT: true
+#         simple: true
+
+#     instagram:
+#         disabled: false
+#         simple: true
+
+#     youtube:
+#         disabled: false
+#         privacyEnhanced: true
+
+# services:
+#     instagram:
+#         disableInlineCSS: true
+#     twitter:
+#         disableInlineCSS: true
