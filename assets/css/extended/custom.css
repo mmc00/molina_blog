@@ -6,6 +6,9 @@ p {
     text-align: justify;
 }
 
+.post-content figure>figcaption>p {
+    text-align: center;
+}
 diagram[src$="centerme"] {
   display:block;
   margin: 0 auto;
