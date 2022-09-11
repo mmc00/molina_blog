@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: Hi there! 👋
 date: 2022-08-29T03:30:58Z
 draft: false
 tags: ["personal"]
@@ -19,4 +19,4 @@ Also, I like to walk my dogs and go to the beach whenever I can (I live relative
 
 <br> 
 
-![beach](/img/beach.jpg "Costa Rica, Puntarenas")
+{{< figure align=center src="/img/beach.jpg" align=center caption="Puntarenas, Costa Rica">}}
