@@ -21,7 +21,7 @@ After that, you use CodeBuild as Continuous Delivery tool, so every push you mak
 
 <br> 
 
-![diagram](/img/hugo_diagram.jpg "Static website in AWS with CD")
+{{< figure align=center src="/img/hugo_diagram.jpg" align=center caption="Diagram of AWS services used">}}
 
 If I have to say what was the most difficult part, I would divide it into two: setting the correct permissions to the s3 bucket,
 so that it is available to everyone and can be modified by CodeBuild, and the right ports open on the EC2 instance (for Cloud9 deployment).
