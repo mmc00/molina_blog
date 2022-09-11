@@ -73,8 +73,8 @@ params:
         subtitle: "Data Scientist, Economist and Cloud Engineer in process"
         imageUrl: "/about2.jpg" # optional
         imageTitle: "" # optional
-        imageWidth: 256 # custom size
-        imageHeight: 256 # custom size
+        imageWidth: 180 # custom size
+        imageHeight: 180 # custom size
         buttons:
             - name: about
               url: about/
