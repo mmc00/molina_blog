@@ -71,10 +71,10 @@ params:
         enabled: true
         title: "Marlon Molina" # optional default will be site title
         subtitle: "Data Scientist, Economist and Cloud Engineer in process"
-        imageUrl: "/about2.jpg" # optional
-        imageTitle: "" # optional
-        imageWidth: 180 # custom size
-        imageHeight: 180 # custom size
+        imageUrl: "/about.png"
+        #imageWidth: 180
+        #imageHeight: 175
+        imageTitle: "Profile"
         buttons:
             - name: about
               url: about/
