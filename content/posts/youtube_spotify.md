@@ -1,6 +1,6 @@
 ---
 title: "Youtube playlist songs to spotify"
-date: 2022-08-31T19:40:41Z
+date: 2022-09-11T19:40:41Z
 draft: false
 tags: ["personal", "youtube", "mix", "spotify"]
 categories: ["projects"]
@@ -13,11 +13,10 @@ I love how youtube adapts to my preferences, spotify also does a good job but no
 So my "motivational" mix was on youtube. When I jog I don't have too good of an
 internet connection and I spend my data on playing songs as videos because I don't have those songs on spotify. 
 
-So I decided to move my songs between platforms using python. it's a pretty easy job!
+So I decided to move my songs between platforms using python. It's a pretty easy job!
 First of all, I realize that a playlist is different from a mix. The latter is not easy to manipulate and the preferred way to get the songs is to use web scraping.
-to get the songs is to use web scraping. I didn't want that, so thanks to a guy who shows how to convert a mix into a playlist in 
-a mix into a playlist on [reddit](https://www.reddit.com/r/youtube/comments/b33ecs/how_can_you_save_a_youtube_mix_into_a_playlist/), you basically 
-you just add a random song in the mix (I did it with a random song that usually appears below the mix list), and after that
+I didn't want that, so thanks to a guy who shows how to convert a mix into a playlist on [reddit](https://www.reddit.com/r/youtube/comments/b33ecs/how_can_you_save_a_youtube_mix_into_a_playlist/), you
+just add a random song in the mix (I did it with a random song that usually appears below the mix list), and after that
 a button magically appears at the top:
 
 <br>
@@ -25,7 +24,7 @@ a button magically appears at the top:
 ![botom](/img/yt_bottom.png#center "Bottom")
 
 We have a playlist, is easier now. Using the library pytube with four lines of
-code you have the songs title.
+code you have the song titles.
 
 {{< highlight python >}}
 import pytube
@@ -108,10 +107,10 @@ for key, value in songs_dict.items():
 {{< /highlight >}}
 
 In my case, four of the song titles that appear on youtube are not identifiable
-in Spotify, so I had to clean them manually:
+in Spotify, so I had to clean them up manually:
 
 {{< highlight python >}}
-## fixing some songs titles
+## fixing some song titles
 new_list2 = new_list.copy()
 new_list2[4] = 'Imagine Dragons - Enemy (with JID)'
 new_list2[9] = 'DJ Snake, Justin Bieber - Let Me love You'

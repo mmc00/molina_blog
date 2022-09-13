@@ -6,7 +6,7 @@ tags: ["personal"]
 categories: ["projects"]
 ---
 
-Hi, my name is Marlon Molina, and I am a data scientist. My career started as a research assistant at the National University in the School of Economics. At the moment, I work at the Ministry of Foreign Trade of Costa Rica as an analyst/researcher. I have a master's degree in economic development.
+Hi, my name is Marlon Molina, and I am a data scientist. My career started as a Research Assistant at the National University in the School of Economics. At the moment, I work at the Ministry of Foreign Trade of Costa Rica as an Data Analyst/Researcher. I have a Master's Degree in Economic Development.
 
 My thesis topic was on VAT tax in the context of General Equilibrium (convex optimization problem) and my main interest now is Machine Learning. I believe that with the data revolution, algorithms can help us to solve many problems in society,
 and I believe that with these technological changes we have a huge opportunity but also a big challenge, to keep this knowledge available to everyone.
