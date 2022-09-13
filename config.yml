@@ -79,7 +79,7 @@ params:
             - name: archive
               url: archives/
             - name: resume
-              url: /resume/Marlon_Molina_Resume.pdf
+              url: https://github.com/mmc00/molina_blog/raw/main/static/resume/Marlon_Molina_Resume.pdf
     
     homeInfoParams:
 #        Title: "Marlon Molina"
