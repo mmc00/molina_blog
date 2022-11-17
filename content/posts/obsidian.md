@@ -29,7 +29,7 @@ since it's plain text, a big difference from Word files. Basically the steps are
 	Because my computer uses windows, I prefer using powershell script, for this you need to install [posh-git](https://git-scm.com/book/en/v2/Appendix-A%3A-Git-in-Other-Environments-Git-in-PowerShell) and write the following code:
 	
 ```
-$vault_path="C:\Documentos\notes"
+$vault_path="YOUR ABSOLUTE VAULT PATH"
 cd "$vault_path"
 
 $CHANGES_EXIST="$(git status --porcelain | wc -l)"
@@ -58,7 +58,7 @@ Bonus step:
 
 ``` 
 ^+o::
-run powershell.exe -WindowStyle hidden -File "C:\Documentos\autohotkey\obsidian.ps1"
+run powershell.exe -WindowStyle hidden -File "YOUR obsidian.ps1 PATH"
 return
 ```
 
