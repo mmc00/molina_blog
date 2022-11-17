@@ -1,5 +1,5 @@
 ---
-title: "My Hugo website with AWS"
+title: "My Hugo website with AWS part1: Hugo, GitHub, Cloud9, S3 and Codebuild"
 date: 2022-09-04T19:40:41Z
 draft: false
 tags: ["personal", "aws"]
