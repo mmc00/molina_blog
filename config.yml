@@ -9,7 +9,7 @@ buildFuture: false
 buildExpired: false
 
 # googleAnalytics: 
-
+googleAnalytics: 'G-6T281Y1Q2Z'
 # minify:
 #     disableXML: true
 
@@ -42,6 +42,14 @@ outputs:
         - RSS
         - JSON
         
+enableGitInfo: true
+frontmatter:
+    lastmod:
+    - lastmod
+    - :git
+    - date
+    - publishDate 
+    
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
     description: "My blog"
@@ -58,7 +66,7 @@ params:
     ShowCodeCopyButtons: true
     ShowRssButtonInSectionTermList: true
     ShowToc: false
-    comments: false
+    comments: true
     
     assets:
     favicon: "/favicon.ico"
@@ -148,3 +156,4 @@ params:
 #         disableInlineCSS: true
 #     twitter:
 #         disableInlineCSS: true
+
