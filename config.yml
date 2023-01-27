@@ -9,7 +9,7 @@ buildFuture: false
 buildExpired: false
 
 # googleAnalytics: 
-googleAnalytics: 'G-6T281Y1Q2Z'
+googleAnalytics: G-6T281Y1Q2Z
 # minify:
 #     disableXML: true
 
