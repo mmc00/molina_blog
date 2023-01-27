@@ -101,7 +101,10 @@ params:
           url: "https://www.linkedin.com/in/marlon-molina-corella-413a3610a"
         - name: email
           url: "mailto:marlonmolina00@hotmai.com"
-          
+
+    analytics:
+      google:
+        SiteVerificationTag: "XYZabc"
 #     editPost:
 #         URL: ""
 #         Text: "Suggest Changes" # edit text
@@ -156,4 +159,3 @@ params:
 #         disableInlineCSS: true
 #     twitter:
 #         disableInlineCSS: true
-
