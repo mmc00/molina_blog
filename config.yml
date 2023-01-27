@@ -59,7 +59,7 @@ params:
     ShowAllPagesInArchive: true
     hideFooter: true
     ShowShareButtons: true
-    ShowReadingTime: false
+    ShowReadingTime: true
     displayFullLangName: true
     ShowPostNavLinks: true
     ShowBreadCrumbs: true
