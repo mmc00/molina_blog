@@ -15,7 +15,8 @@ This post is based on [Felix Yu's video](https://www.youtube.com/watch?v=kvlSep7
 where he explains this process very well documented. 
 I will show how each service helps to get the custom domain and some key notes on the process.
 
-<br> 
+<br>
+
 {{< figure align=center src="/img/aws_domain.jpg" align=center caption="Diagram for custom domain in AWS">}}
 
 
@@ -35,15 +36,24 @@ Summary of steps:
  2. Created a hosted zone:
      Also in the Route 53 service we go to the hosted zones option and we use the domain that just create and select the public hosted zone, because the private is used within an Amazon VPC. 
      Note: An important step is to make sure that NS values values matches with the values in the registered domain.
- 3. Create the Index file in the s3 bucket. This step is skipped because we created our page in the previous [post]([My Hugo website with AWS | mmc00 (mmolinablog.com)](https://mmolinablog.com/posts/hugoweb/)).
+ 3. Create the Index file in the s3 bucket. This step is skipped because we created our page in the previous [post](https://mmolinablog.com/posts/hugoweb/).
 	 Note: Remember to not block all public access in your bucket and to review your bucket policies.
      Also in properties enable the option of static website hosting and specify the home page of the blog, usually index.html
 4. Enabling the https request:
 	AWS has the Certificate Manager service. Just request a public certificate by using your domain. Be sure to create record in Route 53.
 5. Create a distribution in CloudFront:
-	Pick the webpage type option. Then copy our bucket website endpoint an put it in the Origin Domain Name. 
+	Pick the webpage type option. Then copy our bucket website endpoint and put it in the Origin Domain Name. 
     Also select the option **Redirect HTTP to HTTPS** in the Viewer Protocol Policy. **In CNAMEs we use our domain (really important)**.
     Finally we choose our custom SSL Certificate created in step 4.
 6. Finally, in Route 53 we create a new record, selecting simple routing option.
     Then define the record, where you choose the CloudFront distribution for the Value/traffic option. 
     This record will point our domain into the CloudFront distribution.
+
+When making updates to your website, such as adding a new post,
+it's important to ensure that your
+[cache control](https://stackoverflow.com/questions/30154461/aws-cloudfront-not-updating-on-update-of-files-in-s3) 
+settings are properly configured. 
+This is particularly important if you're using AWS CloudFront,
+as it may not automatically update the files in your S3 bucket.
+To ensure that your changes are immediately visible,
+you can set your max-age parameter to 0 or manually invalidate your files in CloudFront
