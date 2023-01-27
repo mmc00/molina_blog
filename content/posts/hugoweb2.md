@@ -1,6 +1,7 @@
 ---
 title: "My Hugo website with AWS part2: Custom domain with AWS"
 date: 2022-11-16T19:40:41Z
+lastmod: 2023-01-26
 draft: false
 tags: ["personal", "aws"]
 categories: ["projects"]

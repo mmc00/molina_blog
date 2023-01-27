@@ -1,6 +1,6 @@
 ---
 title: "Obsidian in GitHub and hotkeys"
-date: 2022-11-16
+date: 2022-11-16T19:40:41Z
 lastmod: 2023-01-26
 draft: false
 tags: ["personal", "aws"]

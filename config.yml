@@ -43,12 +43,12 @@ outputs:
         - JSON
         
 enableGitInfo: true
-frontmatter:
-    lastmod:
-    - lastmod
-    - :git
-    - date
-    - publishDate 
+#frontmatter:
+#    Lastmod:
+#    - lastmod
+#    - :git
+#    - date
+#    - publishDate 
     
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
