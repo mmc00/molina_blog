@@ -1,4 +1,4 @@
-baseURL: "/"
+baseURL: "https://mmolinablog.com/"
 title: mmc00
 paginate: 10
 theme: PaperMod
