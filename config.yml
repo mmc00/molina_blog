@@ -25,16 +25,16 @@ languages:
             main:
                 - name: posts
                   url: posts/
-                  weight: 1
+                  weight: 10
                 - name: search
                   url: search/
-                  weight: 10
+                  weight: 20
                 - name: tags
                   url: tags/
-                  weight: 10
+                  weight: 30
                 - name: about
                   url: about/
-                  weight: 20
+                  weight: 40
                   
 outputs:
     home:
