@@ -1,0 +1,9 @@
+<!-- add the button! -->
+<!-- add the button style & script -->
+{{- if (and (eq .Kind "page") (ne .Layout "archives") (ne .Layout "search")) }}
+    {{- $appbuttjs := resources.Get "js/applause-button.js" | minify | fingerprint}}
+    {{- $appbuttcss := resources.Get "css/applause-button.css" | minify | fingerprint}}
+    <link rel="stylesheet" href="{{ $appbuttcss.Permalink }}"/>
+    <script src="{{ $appbuttjs.Permalink }}" id="applause-button"></script>
+    <applause-button style="width: 58px; height: 58px;"/>
+{{- end }}
